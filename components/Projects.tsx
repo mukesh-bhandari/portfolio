@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Projects = () => {
   return (
@@ -10,7 +11,7 @@ export const Projects = () => {
         <article className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:text-gray-700">
           <div className="aspect-video bg-gray-100 dark:bg-gray-700 overflow-hidden relative ">
             <Image
-              src="/wallpaper.png"
+              src="/easycsit.png"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt="project"
               fill
@@ -22,12 +23,13 @@ export const Projects = () => {
               >
                 <Github></Github>
               </a> */}
-              <a
+              <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
                 href="https://www.easycsit.com/"
+                target="_blank" rel="noopener noreferrer"
               >
                 <ExternalLink></ExternalLink>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="p-6">
@@ -51,24 +53,26 @@ export const Projects = () => {
          <article className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:text-gray-700">
           <div className="aspect-video bg-gray-100 dark:bg-gray-700 overflow-hidden relative">
             <Image
-              src="/wallpaper.png"
+              src="/expense-tracker.png"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt="project"
               fill
             ></Image>
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-              <a
+              <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
                 href="https://github.com/mukesh-bhandari/expense-tracker"
+                target="_blank" rel="noopener noreferrer"
               >
                 <Github></Github>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
                 href="https://expense-tracker-room.vercel.app/login"
+                target="_blank" rel="noopener noreferrer"
               >
                 <ExternalLink></ExternalLink>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="p-6">
@@ -92,18 +96,19 @@ export const Projects = () => {
          <article className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:text-gray-700">
           <div className="aspect-video bg-gray-100 dark:bg-gray-700 overflow-hidden relative">
             <Image
-              src="/wallpaper.png"
+              src="/voice-assistant.png"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt="project"
               fill
             ></Image>
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-              <a
+              <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
                 href="https://github.com/mukesh-bhandari/voice-assistant"
+                target="_blank" rel="noopener noreferrer"
               >
                 <Github></Github>
-              </a>
+              </Link>
               {/* <a
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
                 href=""

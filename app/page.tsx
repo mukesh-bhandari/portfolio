@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import { Github, Linkedin } from "lucide-react";
-import { TechStack } from "./components/TechStack";
-import { Experience } from "./components/Experience";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
+import { TechStack } from "../components/TechStack";
+import { Experience } from "../components/Experience";
+import { Projects } from "../components/Projects";
+import { Contact } from "../components/Contact";
 import Typewriter from "typewriter-effect";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { ThemeToggler } from "./components/ThemeToggler";
+import { ThemeToggler } from "../components/ThemeToggler";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-primary/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
           <div className="animate-fade-in-up relative z-10">
             {" "}
-            <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+            <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
               <Image
-                src="/logo.png"
+                src="/profilepic.jpeg"
                 alt="profile pic"
                 className="rounded-full object-cover"
                 fill
@@ -41,19 +41,21 @@ export default function Home() {
               />
             </div>
             <div className="flex gap-4 justify-center">
-              <a
+              <Link
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary"
                 href="https://github.com/mukesh-bhandari/"
+                target="_blank" rel="noopener noreferrer"
               >
                 <Github></Github>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary"
                 href="https://www.linkedin.com/in/mukesh-bhandari-1147932a8/"
-              >
+             target="_blank" rel="noopener noreferrer"
+             >
                 <Linkedin></Linkedin>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -65,8 +67,6 @@ export default function Home() {
       <footer className="text-center py-8 text-gray-500 text-sm">
         <p> © 2025 | Mukesh Bhandari. All rights reserved</p>
       </footer>
-      
     </main>
-    
   );
 }

@@ -99,7 +99,7 @@ export const Contact = () => {
           className="hover:text-primary transition-colors"
           href="mailto:studentmukesh434@gmail.com"
         >
-          mukeshbhandari@gmail.com
+          studentmukesh434@gmail.com
         </a>
       </div>
     </section>
