@@ -1,4 +1,4 @@
-import { ChevronsLeftRight, LayoutPanelTop, Server, Terminal } from "lucide-react";
+import { ChevronsLeftRight, CodeXml, Heading1, LayoutPanelTop, Server, Terminal } from "lucide-react";
 
 export const TechStack = () => {
   return (
@@ -20,7 +20,7 @@ export const TechStack = () => {
           <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative flex items-center gap-2 md:gap-3 z-10">
             <div className="p-1.5 md:p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-primary group-hover:scale-105 transition-transform duration-300 flex">
-              <ChevronsLeftRight></ChevronsLeftRight>
+              <CodeXml ></CodeXml>
             </div>
             <span className="font-medium text-sm md:text-base text-gray-700 dark:text-gray-200 truncate">
               Next.js
@@ -64,7 +64,7 @@ export const TechStack = () => {
           <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative flex items-center gap-2 md:gap-3 z-10">
             <div className="p-1.5 md:p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-primary group-hover:scale-105 transition-transform duration-300 flex">
-             <Server></Server>
+             <Heading1></Heading1>
             </div>
             <span className="font-medium text-sm md:text-base text-gray-700 dark:text-gray-200 truncate">
               Svelte
