@@ -61,14 +61,14 @@ export const Projects = () => {
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
-                href="https://github.com/mukesh-bhandari/expense-tracker"
+                href="https://github.com/mukesh-bhandari/expense-tracker-v2"
                 target="_blank" rel="noopener noreferrer"
               >
                 <Github></Github>
               </Link>
               <Link
                 className="p-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
-                href="https://expense-tracker-room.vercel.app/login"
+                href="https://expense-tracker-room.vercel.app/"
                 target="_blank" rel="noopener noreferrer"
               >
                 <ExternalLink></ExternalLink>
